@@ -1,0 +1,49 @@
+h1 {
+  text-align: center;
+  font-family:Tahoma;
+  font-size:64px;
+}
+button {
+  background-color: #7e0ab7;
+  color: white;
+  height: 100px;
+  width: 100%;
+  border-radius: 20px;
+  font-family: Tahoma;
+  font-size: 42px;
+  margin: auto;
+}
+  button:hover {
+    background-color: #8f24c3;
+  }
+
+  button:active {
+    background-color: darkorchid;
+    box-shadow: 8px 8px #666;
+    transform: translateY(4px);
+  }
+
+#topleft {
+  width: 50%;
+  position: absolute;
+  top:150px;
+  left:-200px;
+}
+#topright {
+  width: 50%;
+  position: absolute;
+  top: 150px;
+  left: 700px;
+}
+#bottomleft {
+  width: 50%;
+  position: absolute;
+  left:-200px;
+  top: 400px;
+}
+#bottomright {
+  width: 50%;
+  position: absolute;
+  left:700px;
+  top: 400px;
+}
