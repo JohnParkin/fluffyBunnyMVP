@@ -1,0 +1,30 @@
+<div id="header"><h1>Today's Activities: </h1><h3> Monday 21st September 2020</h3></div>
+<div hidden><button class="btn btn-primary" (click)="incrementCounter()">Increment</button></div>
+<div class="row">
+  <table id="activities-table" class="fa-table table-hover table-striped table-bordered table-responsive-sm col-md-12">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>End</th>
+        <th>Activity</th>
+        <th>Discipline</th>
+        <th style="text-align:center">No</th>
+        <th>Owner</th>
+        <th>Instructors</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let act of activities">
+        <td>{{act.start}}</td>
+        <td>{{act.end}}</td>
+        <td>{{act.activity}}</td>
+        <td>{{act.discipline}}</td>
+        <td  style="text-align:center">{{act.num}}</td>
+        <td>{{act.owner}}</td>
+        <td>{{act.instructors}}</td>
+        <td>{{act.status}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

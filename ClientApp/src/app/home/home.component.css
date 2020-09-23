@@ -1,49 +1,53 @@
-h1 {
-  text-align: center;
-  font-family:Tahoma;
-  font-size:64px;
-}
+
 button {
-  background-color: #7e0ab7;
-  color: white;
-  height: 100px;
-  width: 100%;
+  background-color: #8691F0;
+  color: black;
+  height: 140px;
+  width: 50%;
   border-radius: 20px;
   font-family: Tahoma;
   font-size: 42px;
   margin: auto;
+  box-shadow: 8px 8px #776FD9;
+  outline: none;
 }
   button:hover {
-    background-color: #8f24c3;
+    background-color: #776FD9;
+
   }
 
   button:active {
-    background-color: darkorchid;
-    box-shadow: 8px 8px #666;
+    background-color: #A081FC;
+    box-shadow: 2px 2px #776FD9;
     transform: translateY(4px);
   }
+
+#welcome-panel{
+    width:100%;
+    height:100%;
+}
 
 #topleft {
   width: 50%;
   position: absolute;
-  top:150px;
-  left:-200px;
+  top:30%;
+  left:20%;
 }
 #topright {
   width: 50%;
   position: absolute;
-  top: 150px;
-  left: 700px;
+  top: 30%;
+  left: 55%;
 }
 #bottomleft {
   width: 50%;
   position: absolute;
-  left:-200px;
-  top: 400px;
+  left: 20%;
+  top: 60%;
 }
 #bottomright {
   width: 50%;
   position: absolute;
-  left:700px;
-  top: 400px;
+  left: 55%;
+  top: 60%;
 }

@@ -1,0 +1,21 @@
+#attendees-table, #activities-table {
+  border: none;
+  background-color: #708CDB;
+}
+
+table {
+  border-color: #708CDB;
+  border-radius: 12px;
+}
+
+table, th, td {
+  margin: 4px;
+
+}
+
+th, td {
+  max-width: 40px;
+  overflow-wrap: normal;
+  border: none;
+  padding: 12px;
+}

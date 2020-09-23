@@ -1,6 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Provide sufficient contrast against white background */
+
+/*
+    Fluffy Bunny Colours
+    a: #A081FC
+    b: #776FD9
+    c: #8691F0
+    d: #708DDB
+    e: #64A7FA
+
+*/
+
+
 a {
   color: #0366d6;
 }
@@ -13,7 +25,32 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
-body {
-  background-color: #1b6ec2;
-  height:800px;
+html, body {
+  background-color: #64A7FA;
+  height: 100%;
 }
+
+h1 {
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 48px;
+}
+
+h2 {
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 36px;
+  font-style:italic;
+  margin-bottom:42px;
+}
+
+#header {
+  text-align: center;
+}
+
+  #header h1,
+  #header h3 button {
+    text-align: center;
+    display: inline;
+    vertical-align: middle;
+  }

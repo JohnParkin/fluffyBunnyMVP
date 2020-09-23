@@ -17,17 +17,17 @@
   </ul>
   <p>The <code>ClientApp</code> subdirectory is a standard Angular CLI application. If you open a command prompt in that directory, you can run any <code>ng</code> command (e.g., <code>ng test</code>), or use <code>npm</code> to install extra packages into it.</p>
 </div>
-<div class="col-md-12">
+<div id="welcome-panel">
   <div id="topleft">
-    <button type="button" class="touch">Dropping-Off</button>
+    <button type="button" class="touch" (click)="customerClick('Droppiing-Off')">Dropping-Off</button>
   </div>
   <div id="topright">
-    <button type="button" class="touch">Picking-Up</button>
+    <button type="button" class="touch" (click)="customerClick('Picking-Up')">Picking-Up</button>
   </div>
   <div id="bottomleft">
-    <button type="button" class="touch">Check-In</button>
+    <button type="button" class="touch" (click)="customerClick('Checking-In')">Checking-In</button>
   </div>
   <div id="bottomright">
-    <button type="button" class="touch">Check-Out</button>
+    <button type="button" class="touch" (click)="customerClick('Checking-Out')">Checking-Out</button>
   </div>
 </div>

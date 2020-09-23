@@ -1,0 +1,31 @@
+<div id="header"><h1>Attendies: </h1><h3> Monday 21st September 2020</h3></div>
+<div class="row">
+  <table id="attendees-table" class="fa-table table-hover table-striped table-bordered table-responsive-sm col-md-12">
+    <thead>
+      <tr>
+        <th>BookingRef</th>
+        <th>Firstname</th>
+        <th>Surname</th>
+        <th>Guardian Firstname</th>
+        <th>Guardian Surname</th>
+        <th>Contact Tel</th>
+        <th>Latest</th>
+        <th>Sign-In</th>
+        <th>Sign-Out</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of attendees">
+        <td>{{a.bookingref}}</td>
+        <td>{{a.firstname}}</td>
+        <td>{{a.surname}}</td>
+        <td>{{a.guardianfirstname}}</td>
+        <td>{{a.guardiansurname}}</td>
+        <td>{{a.contactTel}}</td>
+        <td>{{a.status}}</td>
+        <td>{{a.droppedoff}}</td>
+        <td>{{a.pickedup}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

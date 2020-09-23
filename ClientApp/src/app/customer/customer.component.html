@@ -1,0 +1,63 @@
+<div id="header"><h1>You are {{ action }}!  </h1> <button (click)="startOver()">Start Over?</button></div>
+<h2>Right then let's try and find your records.</h2>
+
+ <div id="custInputPanel" class="col-md-6">
+
+  <h3>Use any one of these...</h3>
+
+  <div class="col-md-10 offset-md-1">
+    <div class="form-group">
+      <label for="customerEmail">Email Address</label>
+      <!--<input #input on-focus="onInputFocus()" (ngModelChange)="onValueChange()" type="text" class="form-control" id="customerEmail"
+             [(ngModel)]="customerEmail" name="Email" placeholder="Tap Here!">-->
+      <input (keyup)="onValueChange()" type="text" class="form-control" id="customerEmail"
+             [(ngModel)]="customerEmail" name="Email" placeholder="Type Here!">
+    </div>
+
+  </div>
+
+  <div class="col-md-10  offset-md-1">
+    <div clas="form-group">
+      <label for="customerRef">Booking Reference</label>
+      <input #input on-focus="onInputFocus()" type="text" class="form-control" id="customerRef" form="cutomerRef"
+             [(ngModel)]="customerRef" name="Ref" placeholder="Type Here!" />
+    </div>
+
+  </div>
+
+  <div class="col-md-10  offset-md-1">
+    <div class="form-group">
+      <label for="customerCourse">What course are you booked onto?</label>
+      <!--<input type="text" class="form-control" id="customerCourse" form="customerCourse"
+             [(ngModel)]="customerCourse" name="Course" />-->
+      <select class="form-control" id="course" required>
+        <option *ngFor="let course of courses" [value]="course">{{course}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="col-md-10 offset-md-1">
+    <div class="form-group">
+      <label for="customerTel">Contact Number</label>
+      <input type="text" class="form-control" id="customerTel" form="cutomerTel"
+             [(ngModel)]="customerTel" name="Tel" />
+    </div>
+  </div>
+
+  <!--<div class="col-md-10 offset-md-1">
+    <div class="form-group">
+      <label for="customer">What is your strength?</label>
+      <select class="form-control" id="power" required>
+        <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+      </select>
+    </div>
+  </div>-->
+
+</div>
+ <div id="custStatusPanel" class="col-md-6">
+   <h3>Course Details</h3>
+ </div>
+
+<div id="keyboard">
+  <div class="simple-keyboard"></div>
+</div>
